@@ -8,6 +8,7 @@
 namespace tests\Unit\Strategy\Ducks\With;
 
 use Hj\Strategy\Ducks\With\Flying;
+use Hj\Strategy\Ducks\With\FlyingStrategy;
 
 class FlyingTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,7 +24,7 @@ class FlyingTest extends \PHPUnit_Framework_TestCase
 
     public function testShouldBeAFlyingStrategy()
     {
-        $this->assertInstanceOf(Flying::CLASS_NAME, $this->strategy);
+        $this->assertInstanceOf(FlyingStrategy::CLASS_NAME, $this->strategy);
     }
 
     public function testShouldFly()
