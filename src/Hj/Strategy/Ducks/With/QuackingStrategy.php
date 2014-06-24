@@ -13,6 +13,8 @@ namespace Hj\Strategy\Ducks\With;
  */
 interface QuackingStrategy
 {
+    const CLASS_NAME = __CLASS__;
+
     /**
      * @return string
      */
